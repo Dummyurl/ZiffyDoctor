@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ziffy Doctor</string>
+    <string-array name="array_med_type">
+        <item>Tab</item>
+        <item>Cap</item>
+        <item>Syp</item>
+    </string-array>
+
+
+</resources>

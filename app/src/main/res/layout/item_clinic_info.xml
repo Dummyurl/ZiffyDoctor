@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/clinic_info">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:textColor="@color/clinic_info_header"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_25"
+            android:text="Clinic Info"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_add_clinic"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_clinic_info"
+        android:padding="@dimen/dimen_15"
+        android:text="Nirmal CLinic"
+        android:textSize="@dimen/text_size_20"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_clinic_info"
+        android:padding="@dimen/dimen_15"
+        android:text="Dr. Kamlesh"
+        android:textSize="@dimen/text_size_20"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_clinic_info"
+        android:padding="@dimen/dimen_15"
+        android:text="Dr. Chaugule"
+        android:textSize="@dimen/text_size_20"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_clinic_info"
+        android:padding="@dimen/dimen_15"
+        android:text="Amanora Chambers"
+        android:textSize="@dimen/text_size_20"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_clinic_info"
+        android:padding="@dimen/dimen_15"
+        android:text="+91 9876543211"
+        android:textSize="@dimen/text_size_20"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_clinic_info"
+        android:padding="@dimen/dimen_15"
+        android:text="+91 9987654321"
+        android:textSize="@dimen/text_size_20"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_clinic_info"
+        android:padding="@dimen/dimen_15"
+        android:text="10 am - 9 pm"
+        android:textSize="@dimen/text_size_20"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+  <path
+      android:pathData="M30,30m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0"
+      android:fillColor="#21d0c3"/>
+  <path
+      android:pathData="M39.799,44.52l1.91,3.424 -2.195,1.224 -1.91,-3.424q0.552,-0.293 1.1,-0.6t1.09,-0.624Z"
+      android:fillColor="#666"/>
+  <path
+      android:pathData="M21.686,14.625a17.548,17.548 0,1 1,-6.777 23.874,17.549 17.549,0 0,1 6.777,-23.874Z"
+      android:fillColor="#666"/>
+  <path
+      android:pathData="M22.134,15.384a16.58,16.58 0,1 1,-6.4 22.556A16.58,16.58 0,0 1,22.134 15.384Z"
+      android:fillColor="#d9dada"/>
+  <path
+      android:pathData="M47.314,54.683l-2.587,-4.638a0.99,0.99 0,0 0,-1.336 -0.4l-3.36,1.874a0.992,0.992 0,0 0,-0.364 1.345l2.614,4.685a28.679,28.679 0,0 0,5.033 -2.869Z"
+      android:fillColor="#666"/>
+  <path
+      android:pathData="M45.019,50.729l-0.834,-1.5a0.989,0.989 0,0 0,-1.335 -0.4l-3.36,1.874a0.99,0.99 0,0 0,-0.364 1.345l0.835,1.5 5.059,-2.822Z"
+      android:fillColor="#fefefe"/>
+  <path
+      android:pathData="M45.019,50.73l-0.834,-1.5a0.991,0.991 0,0 0,-1.275 -0.428l1.319,2.365ZM39.431,50.747a0.992,0.992 0,0 0,-0.306 1.309l0.835,1.5 0.79,-0.441 -1.319,-2.365Z"
+      android:fillColor="#ecf0f1"/>
+  <path
+      android:pathData="M36.266,43.691a15.083,15.083 0,0 1,-14.635 -26.237,14.528 14.528,0 0,0 -1.656,1.827 15.21,15.21 0,0 0,13.866 24.859A14.526,14.526 0,0 0,36.266 43.691Z"
+      android:fillColor="#fefefe"/>
+  <path
+      android:pathData="M39.425,40.538c5.7,-3.677 7.424,-11.612 3.794,-18.12s-11.286,-9.212 -17.411,-6.291q0.234,-0.061 0.47,-0.114c5.923,-2.153 12.925,0.6 16.347,6.737s2.087,13.54 -2.857,17.449q-0.168,0.173 -0.343,0.34Z"
+      android:fillColor="#fefefe"/>
+  <path
+      android:pathData="M56.552,56.754a0.358,0.358 0,1 0,0.359 0.357A0.358,0.358 0,0 0,56.552 56.754Z"
+      android:fillColor="#d9dada"/>
+</vector>

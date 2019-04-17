@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <color name="colorPrimary">#3dcdad</color>
+    <color name="colorPrimaryDark">#23bc9a</color>
+    <color name="colorAccent">#23bc9a</color>
+    -->
+
+    <color name="colorPrimary">#077d8b</color>
+    <color name="colorPrimary1">#1BA7B9</color>
+    <color name="colorPrimaryDark">#006b78</color>
+    <color name="colorAccent">#07a7b9</color>
+    <color name="colorAccent_faint_30">#4D07A7B9</color>
+
+
+
+    <!--<color name="colorPrimary">#ff422a</color>
+    <color name="colorPrimary1">#ff6a58</color>
+    <color name="colorPrimaryDark">#e82d16</color>
+    <color name="colorAccent">#da3722</color>-->
+
+    <color name="light_white">#80ffffff</color>
+    <color name="light_red">#ff8d7f</color>
+    <color name="appbackground">#f9f3f3</color>
+    <color name="colorTagBg">#e5e5e5</color>
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="colorTextDark">#484848</color>
+    <color name="colorTextDarkGray">#787878</color>
+    <color name="black_dark">#FF000000</color>
+    <color name="bg_msg_from">#FF0099ff</color>
+    <color name="bg_msg_you">#e5e7eb</color>
+    <color name="view_bg">#efeeee</color>
+    <color name="light_yellow">#fff2a1</color>
+    <color name="greyshade">#bebebe</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#2c2c2c</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#37b337</color>
+
+    <color name="light_green">#ddffdd</color>
+
+    <color name="blue">#0033ff</color>
+    <color name="light_grey">#aaaaaa</color>
+    <color name="grey">#888888</color>
+    <color name="dark_grey">#fc747171</color>
+
+    <color name="grey_light">#b3878484</color>
+    <color name="alarm_title_outdated">#888888</color>
+    <color name="alarm_details">#888888</color>
+
+    <color name="litegrey">#f1f1f1</color>
+
+    <color name="itemselected">#f1f1f1</color>
+    <color name="login_hover">#f1f1f1</color>
+    <color name="sign_out_color">#f1f1f1</color>
+    <color name="typing">#0099ff</color>
+    <color name="clinic_info">#d4d4d4</color>
+    <color name="card_bg_color">#e4e6e3</color>
+    <color name="transparent">#88000000</color>
+
+    <color name="primary">#37474f</color>
+    <color name="primary_dark">#263238</color>
+    <color name="accent">#78909c</color>
+    <color name="control_normal">#888888</color>
+    <color name="fab_pressed">#546e7a</color>
+
+    <color name="fb_colorPrimary">#077d8b</color>
+    <color name="fb_colorPrimary1">#006B78</color>
+    <color name="fb_colorPrimaryDark">#006b78</color>
+    <color name="fb_colorAccent">#FF4C4C</color>
+    <color name="fb_ligh_grey">#EEEEEE</color>
+    <color name="card_appointments">#21d079</color>
+    <color name="card_completed">#ff5b62</color>
+    <color name="card_cancel_reschedule">#ff885b</color>
+    <color name="menu_title">#878787</color>
+    <color name="hint_text">#40077D8B</color>
+    <color name="color_layout_meal">#eae8ee</color>
+    <color name="color_green">#30b17d</color>
+    <color name="payment_text_color">#4a4a4a</color>
+    <color name="clinic_info_header">#5e1e71</color>
+    <color name="account_tab_color">#f6fff9</color>
+
+
+
+
+    <!--Color -->
+
+    #e4e4e4
+
+    <color name="clinic_header">#e4e4e4</color>
+
+
+
+
+</resources>

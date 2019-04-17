@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_clinics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_appointments"
+            android:layout_margin="@dimen/dimen_5"
+            android:scrollbars="vertical"/>
+    -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@color/clinic_info"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Clinic Info"
+            android:textColor="@color/clinic_info_header"
+            android:textSize="@dimen/text_size_25" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_add_clinic" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingBottom="@dimen/dimen_5"
+        android:text="Nirmal CLinic"
+        android:textSize="@dimen/text_size_20"
+        app:srcCompat="@drawable/img_clinic_info" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingBottom="@dimen/dimen_5"
+        android:text="Dr. Kamlesh"
+        android:textSize="@dimen/text_size_20"
+        app:srcCompat="@drawable/img_clinic_info" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingBottom="@dimen/dimen_5"
+
+        android:text="Dr. Chaugule"
+        android:textSize="@dimen/text_size_20"
+        app:srcCompat="@drawable/img_clinic_info" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingBottom="@dimen/dimen_5"
+
+        android:paddingRight="@dimen/dimen_15"
+        android:text="Amanora Chambers"
+        android:textSize="@dimen/text_size_20"
+        app:srcCompat="@drawable/img_clinic_info" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingBottom="@dimen/dimen_5"
+
+        android:text="+91 9876543211"
+        android:textSize="@dimen/text_size_20"
+        app:srcCompat="@drawable/img_clinic_info" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+91 9987654321"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingBottom="@dimen/dimen_5"
+
+        android:textSize="@dimen/text_size_20"
+        app:srcCompat="@drawable/img_clinic_info" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10 am - 9 pm"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingBottom="@dimen/dimen_5"
+
+        android:textSize="@dimen/text_size_20"
+        android:paddingTop="@dimen/dimen_5"
+        app:srcCompat="@drawable/img_clinic_info" />
+
+
+</LinearLayout>
+
+
+    <!--
+    </LinearLayout>-->

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.Dashboard.activities.DashboardActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_appointments"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_screen_height"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/clinic_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.4">
+                <TextView
+                    android:id="@+id/text_clinic_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nirmal Clinic"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/clinic_header"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="314-B,Amanora Chambers, Hadapsar, Magarpatta Road,Pune-28 "
+                    android:textColor="@color/white"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:textSize="@dimen/text_size_12"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+                android:gravity="">
+
+                <ImageView
+                    android:id="@+id/img_doct_profile"
+                    android:layout_width="75dp"
+                    android:layout_height="65dp"
+                    android:padding="@dimen/dimen_5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr.Reena Jain"
+                    android:textSize="@dimen/text_size_15"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clinic_info"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:weightSum="1.2">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_5"
+                android:layout_weight="0.4"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_10"
+                app:cardMaxElevation="@dimen/dimen_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/card_appointments"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingLeft="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_5"
+                        android:text="Appoitnments\n"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_home"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/text_app_numbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="bottom"
+                        android:text="08"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_40"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_5"
+                android:layout_weight="0.4"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_10"
+                app:cardMaxElevation="@dimen/dimen_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/card_completed"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingLeft="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_5"
+                        android:text="Completed\n"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_home"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/text_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="bottom"
+                        android:text="08"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_40"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_5"
+                android:layout_weight="0.4"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_10"
+                app:cardMaxElevation="@dimen/dimen_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/card_cancel_reschedule"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingLeft="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_5"
+                        android:text="Cancel/\nReschedule"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_home"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/text_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="bottom"
+                        android:text="08"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_40"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_all_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_appointments"
+        android:layout_margin="@dimen/dimen_5"
+        android:scrollbars="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/dimen_5"
+        android:layout_margin="@dimen/dimen_15"
+        android:src="@drawable/ic_add"
+        app:rippleColor="@color/colorPrimary"/>
+
+
+</RelativeLayout>
