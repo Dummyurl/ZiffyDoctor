@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menus">
+        <item></item>
+        <item>Info</item>
+        <item>Clinic</item>
+        <item>Schedule</item>
+        <item>Wallet</item>
+        <item>Accounts</item>
+        <item>Settings</item>
+        <item>Notification</item>
+        <item>Help_centre</item>
+        <item>Refer us</item>
+    </string-array>
+
+    <array name="images">
+       <item>@drawable/ic_info</item>
+        <item>@drawable/ic_info</item>
+        <item>@drawable/ic_clinic</item>
+        <item>@drawable/ic_calendar</item>
+        <item>@drawable/ic_wallet</item>
+        <item>@drawable/ic_accounts</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_notification</item>
+        <item>@drawable/ic_helpcenter</item>
+        <item>@drawable/ic_refer</item>
+    </array>
+
+</resources>

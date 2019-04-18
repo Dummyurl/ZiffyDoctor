@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.ziffytech.ziffydoctor.R;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.AccountsActivity;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.ClinicsActivity;
-import com.ziffytech.ziffydoctor.activities.OPD.activities.VitalSignsActivity;
+import com.ziffytech.ziffydoctor.activities.OPD.activities.Activities.PatientlistTab;
 
 import java.util.ArrayList;
 
@@ -52,7 +52,8 @@ public class AllMenuAdapter extends RecyclerView.Adapter<AllMenuAdapter.ProductH
                 public void onClick(View v)
                 {
                     //holder.card_menu.set(Color.parseColor("#077d8b"));
-                    activity.startActivity(new Intent(activity, VitalSignsActivity.class));
+                    //activity.startActivity(new Intent(activity, VitalSignsActivity.class));
+                    activity.startActivity(new Intent(activity, PatientlistTab.class));
                 }
             });
 

@@ -1,4 +1,4 @@
-package com.ziffytech.ziffydoctor.activities.OPD.activities;
+package com.ziffytech.ziffydoctor.activities.OPD.activities.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,21 +8,21 @@ import android.widget.Button;
 
 import com.ziffytech.ziffydoctor.R;
 
-public class ReviewActivity extends AppCompatActivity
+public class VitalSignsActivity extends AppCompatActivity
 {
     Button buttonNext;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_review);
+        setContentView(R.layout.activity_vital_signs);
         setupViews();
         buttonNext.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                startActivity(new Intent(ReviewActivity.this, PaymentActivity.class));
+                startActivity(new Intent(VitalSignsActivity.this, MedicinePrescribeActivity.class));
             }
         });
     }

@@ -21,17 +21,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.DrawerMenu.activities.DoctorInfoActivity"></activity>
-        <activity android:name=".activities.OPD.activities.PaymentActivity" />
-        <activity android:name=".activities.OPD.activities.ReviewActivity" />
         <activity
-            android:name=".activities.OPD.activities.MedicinePrescribeActivity"
+            android:name=".activities.OPD.activities.Activities.PatientlistTab"
+            android:label="@string/title_activity_patientlist_tab"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activities.DrawerMenu.activities.DoctorInfoActivity" />
+        <activity android:name=".activities.OPD.activities.Activities.PaymentActivity" />
+        <activity android:name=".activities.OPD.activities.Activities.ReviewActivity" />
+        <activity
+            android:name=".activities.OPD.activities.Activities.MedicinePrescribeActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activities.OPD.activities.TestPrescribeActivity"
+            android:name=".activities.OPD.activities.Activities.TestPrescribeActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activities.OPD.activities.VitalSignsActivity"
+            android:name=".activities.OPD.activities.Activities.VitalSignsActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".activities.Dashboard.activities.DashboardActivity">
             <intent-filter>

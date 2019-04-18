@@ -22,7 +22,6 @@ import java.util.List;
 
 public class AccountsActivity extends AppCompatActivity
 {
-
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private int mHour, mMinute;
