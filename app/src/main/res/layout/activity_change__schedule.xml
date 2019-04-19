@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/topheader"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:padding="@dimen/dimen_15"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/timeinterval"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:padding="@dimen/dimen_15"/>
+
+    <TimePicker
+        android:id="@+id/simpleTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_15"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottomworkdays"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"/>
+
+</LinearLayout>

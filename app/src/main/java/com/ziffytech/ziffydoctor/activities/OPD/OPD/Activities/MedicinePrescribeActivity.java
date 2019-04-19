@@ -1,4 +1,4 @@
-package com.ziffytech.ziffydoctor.activities.OPD.activities.Activities;
+package com.ziffytech.ziffydoctor.activities.OPD.OPD.Activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;

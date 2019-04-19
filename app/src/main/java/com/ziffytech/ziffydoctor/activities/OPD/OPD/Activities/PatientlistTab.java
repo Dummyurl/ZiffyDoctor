@@ -1,4 +1,4 @@
-package com.ziffytech.ziffydoctor.activities.OPD.activities.Activities;
+package com.ziffytech.ziffydoctor.activities.OPD.OPD.Activities;
 
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +11,7 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 
 import com.ziffytech.ziffydoctor.R;
-import com.ziffytech.ziffydoctor.activities.OPD.activities.Fragments.Homefragment;
+import com.ziffytech.ziffydoctor.activities.OPD.OPD.Fragments.Homefragment;
 
 import java.util.ArrayList;
 import java.util.List;

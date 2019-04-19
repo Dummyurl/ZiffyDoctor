@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.ziffytech.ziffydoctor.R;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.AccountsActivity;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.ClinicsActivity;
-import com.ziffytech.ziffydoctor.activities.OPD.activities.Activities.PatientlistTab;
+import com.ziffytech.ziffydoctor.activities.OPD.OPD.Activities.PatientlistTab;
 
 import java.util.ArrayList;
 

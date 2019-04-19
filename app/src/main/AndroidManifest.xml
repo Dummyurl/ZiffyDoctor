@@ -21,21 +21,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.MyPatient.activities.Patientlist"></activity>
+        <activity android:name=".activities.DrawerMenu.activities.Referus" />
+        <activity android:name=".activities.DrawerMenu.activities.Change_Schedule" />
+        <activity android:name=".activities.DrawerMenu.activities.Doctor_schedule" />
         <activity
-            android:name=".activities.OPD.activities.Activities.PatientlistTab"
+            android:name=".activities.OPD.OPD.Activities.PatientlistTab"
             android:label="@string/title_activity_patientlist_tab"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.DrawerMenu.activities.DoctorInfoActivity" />
-        <activity android:name=".activities.OPD.activities.Activities.PaymentActivity" />
-        <activity android:name=".activities.OPD.activities.Activities.ReviewActivity" />
+        <activity android:name=".activities.OPD.OPD.Activities.PaymentActivity" />
+        <activity android:name=".activities.OPD.OPD.Activities.ReviewActivity" />
         <activity
-            android:name=".activities.OPD.activities.Activities.MedicinePrescribeActivity"
+            android:name=".activities.OPD.OPD.Activities.MedicinePrescribeActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activities.OPD.activities.Activities.TestPrescribeActivity"
+            android:name=".activities.OPD.OPD.Activities.TestPrescribeActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activities.OPD.activities.Activities.VitalSignsActivity"
+            android:name=".activities.OPD.OPD.Activities.VitalSignsActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".activities.Dashboard.activities.DashboardActivity">
             <intent-filter>

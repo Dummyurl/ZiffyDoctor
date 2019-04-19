@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="top"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:titleMarginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:paddingTop="20dp"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white"
+        app:theme="@style/ToolbarColoredBackArrow"
+        />
+
+<com.ziffytech.ziffydoctor.Coordinatorlayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatortablayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/calendarView"
+    android:layout_below="@+id/toolbar"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</com.ziffytech.ziffydoctor.Coordinatorlayout>
+
+    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textColorSelected="#FFFF"
+        app:sizeBottomText="11dp"
+        app:sizeMiddleText="12dp"
+        app:sizeTopText="11dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        />
+
+</RelativeLayout>

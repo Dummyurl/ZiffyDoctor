@@ -14,16 +14,20 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ziffytech.ziffydoctor.R;
 import com.ziffytech.ziffydoctor.activities.Dashboard.adapters.AdapterDrawer;
 import com.ziffytech.ziffydoctor.activities.Dashboard.adapters.AllMenuAdapter;
 import com.ziffytech.ziffydoctor.activities.Dashboard.models.AllMenuModel;
+import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.ClinicsActivity;
+import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.DoctorInfoActivity;
+import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.Doctor_schedule;
+import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.Referus;
 
 import java.util.ArrayList;
 
-public class DashboardActivity extends AppCompatActivity implements View.OnClickListener
-{
+public class DashboardActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     TextView text_app_number;
     TextView text_completed_numbers;
@@ -67,7 +71,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         drawer_layout = (DrawerLayout) findViewById(R.id.drawer_layout);
         adapterDrawer = new AdapterDrawer(DashboardActivity.this, getResources().getStringArray(R.array.menus));
         listView_left_drawer = (ListView) findViewById(R.id.left_drawer);
-        //listView_left_drawer.setOnItemClickListener((AdapterView.OnItemClickListener) this);
+        listView_left_drawer.setOnItemClickListener(this);
         listView_left_drawer.setAdapter(adapterDrawer);
         imgv_drawer = (ImageView)findViewById(R.id.imgv_drawer);
         imgv_drawer.setOnClickListener(this);
@@ -94,6 +98,47 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
             {
                 drawer_layout.openDrawer(Gravity.LEFT);
             }
+        }
+
+    }
+
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
+    {
+
+        if(i==1)
+        {
+            Intent profile = new Intent(DashboardActivity.this, DoctorInfoActivity.class);
+            startActivity(profile);
+        }
+        if(i==2)
+        {
+            Intent profile = new Intent(DashboardActivity.this, ClinicsActivity.class);
+            startActivity(profile);
+        }
+        if(i==3)
+        {
+            Intent profile = new Intent(DashboardActivity.this, Doctor_schedule.class);
+            startActivity(profile);
+        }
+        if(i==4)
+        {
+        }
+        if(i==5)
+        {
+        }
+        if(i==6)
+        {
+        }
+        if(i==7)
+        {
+        }
+        if(i==8)
+        {
+        }
+        if(i==9)
+        {
+            Intent profile = new Intent(DashboardActivity.this, Referus.class);
+            startActivity(profile);
         }
 
     }

@@ -1,4 +1,4 @@
-package com.ziffytech.ziffydoctor.activities.OPD.activities.Fragments;
+package com.ziffytech.ziffydoctor.activities.OPD.OPD.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
