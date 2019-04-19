@@ -6,10 +6,11 @@ import android.os.Bundle;
 import android.widget.TimePicker;
 
 import com.ziffytech.ziffydoctor.R;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
 
 import java.util.Calendar;
 
-public class Change_Schedule extends AppCompatActivity {
+public class Change_Schedule extends CommonActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -7,10 +7,10 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class ObjectSerializer
-{
-    public static String serialize(Serializable obj) throws IOException
-    {
+public class ObjectSerializer {
+
+    
+    public static String serialize(Serializable obj) throws IOException {
         if (obj == null) return "";
         try {
             ByteArrayOutputStream serialObj = new ByteArrayOutputStream();
@@ -20,11 +20,10 @@ public class ObjectSerializer
             return encodeBytes(serialObj.toByteArray());
         } catch (Exception e) {
         }
-        return null;
+  return null;
     }
     
-    public static Object deserialize(String str) throws IOException
-    {
+    public static Object deserialize(String str) throws IOException {
         if (str == null || str.length() == 0) return null;
         try {
             ByteArrayInputStream serialObj = new ByteArrayInputStream(decodeBytes(str));
@@ -32,7 +31,7 @@ public class ObjectSerializer
             return objStream.readObject();
         } catch (Exception e) {
         }
-        return str;
+  return str;
     }
     
     public static String encodeBytes(byte[] bytes) {

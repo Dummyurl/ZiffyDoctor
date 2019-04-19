@@ -4,15 +4,20 @@ public class ConstValue {
 
     /*-------------------------------LIVE BASE URL------------------------------------*/
 
-     //public static String BASE_URL = "https://www.ziffytech.com/admin/";
-     //public static String BASE_PHARMACY = "https://www.ziffytech.com/pharmacy/";
+  //public static String BASE_URL = "https://www.ziffytech.com/admin/";
+  //public static String BASE_PHARMACY = "https://www.ziffytech.com/pharmacy/";
 
 
-    /*-------------------------------TEST BASE URL--------------------------------------- */
+    /*-------------------------------TEST SERVER--------------------------------------- */
 
      public  static String BASE_URL = "http://13.127.253.100:90/admin/";
      public static String BASE_PHARMACY="http://13.127.253.100:90/pharmacy/admin/";
 
+
+     /*-------------------------------TEST BASE URL------------------------------------*/
+
+    //public  static String BASE_URL = "https://www.ziffytech.com/ZiffyDummy/admin/";
+    //public static String BASE_PHARMACY="https://www.ziffytech.com/ZiffyDummy/pharmacy/";
 
      public static String CURRENCY = "₹";
      public static String incomplete = "0";
@@ -27,6 +32,8 @@ public class ConstValue {
      public static String refund_initiated = "9";
      public static String refund_completed = "10";
      public static String completed = "11";
+
+
 
 
 }

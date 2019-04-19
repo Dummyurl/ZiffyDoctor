@@ -8,8 +8,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.ziffytech.ziffydoctor.R;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
 
-public class TestPrescribeActivity extends AppCompatActivity
+public class TestPrescribeActivity extends CommonActivity
 {
     Button buttonNext;
     TextView text_skip;

@@ -8,8 +8,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.ziffytech.ziffydoctor.R;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
 
-public class PaymentActivity extends AppCompatActivity
+public class PaymentActivity extends CommonActivity
 {
     TextView text_cheque, text_cash, text_POS;
     boolean isPOS=false,isCheque=false,isCash=false;

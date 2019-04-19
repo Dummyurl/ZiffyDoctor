@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.ziffytech.ziffydoctor.R;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
 
-public class ReviewActivity extends AppCompatActivity
+public class ReviewActivity extends CommonActivity
 {
     Button buttonNext;
     @Override

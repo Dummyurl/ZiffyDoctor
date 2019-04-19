@@ -16,11 +16,12 @@ import android.widget.TextView;
 
 import com.ziffytech.ziffydoctor.R;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.fragments.TabFragment;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AccountsActivity extends AppCompatActivity
+public class AccountsActivity extends CommonActivity
 {
     private TabLayout tabLayout;
     private ViewPager viewPager;

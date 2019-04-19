@@ -14,6 +14,8 @@ import android.widget.Toast;
 import com.ziffytech.ziffydoctor.Coordinatorlayout.CoordinatorTabLayout;
 import com.ziffytech.ziffydoctor.R;
 import com.ziffytech.ziffydoctor.activities.MyPatient.adapter.PDviewpagerAdapter;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -24,7 +26,7 @@ import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
 /**
  * Created by hugeterry(http://hugeterry.cn)
  */
-public class PatientDetails extends AppCompatActivity
+public class PatientDetails extends CommonActivity
 {
     private CoordinatorTabLayout mCoordinatorTabLayout;
     private int[] mImageArray, mColorArray;

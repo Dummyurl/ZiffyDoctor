@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.ziffytech.ziffydoctor.R;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
 
-public class VitalSignsActivity extends AppCompatActivity
+public class VitalSignsActivity extends CommonActivity
 {
     Button buttonNext;
     @Override

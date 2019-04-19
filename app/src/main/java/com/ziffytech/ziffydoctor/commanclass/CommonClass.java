@@ -16,8 +16,12 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-
+import com.afollestad.materialdialogs.DialogAction;
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.ziffytech.ziffydoctor.R;
+import com.ziffytech.ziffydoctor.activities.Dashboard.activities.DashboardActivity;
+import com.ziffytech.ziffydoctor.config.ApiParams;
+import com.ziffytech.ziffydoctor.config.ConstValue;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,51 +36,46 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Locale;
 
-public class CommonClass
-{
+
+public class CommonClass {
     Activity activity;
     public SharedPreferences settings;
     ProgressDialog dialog;
-
-    public CommonClass(Activity activity)
-    {
+    public CommonClass(Activity activity){
         this.activity = activity;
-        //   settings = activity.getSharedPreferences(ApiParams.PREF_NAME, 0);
+        settings = activity.getSharedPreferences(ApiParams.PREF_NAME, 0);
     }
+    public void logOut(){
 
-    /*
-    public void logOut()
-    {
-                 new MaterialDialog.Builder(activity)
+
+        new MaterialDialog.Builder(activity)
                 .title(R.string.app_name)
                 .content("You will not receive any notifications after logging out. Do you want to continue?")
                 .positiveText("Logout")
                 .cancelable(false)
-                .onPositive(new MaterialDialog.SingleButtonCallback()
-                 {
+                .onPositive(new MaterialDialog.SingleButtonCallback() {
                     @Override
-                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which)
-                    {
+                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+
                         settings.edit().clear().commit();
-                        Intent intent = new Intent(activity,LoginActivity.class);
+                        Intent intent = new Intent(activity, DashboardActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         activity.startActivity(intent);
                         activity.finish();
+
+
+
                     }
                 })
                 .negativeText("Cancel")
-                .onNegative(new MaterialDialog.SingleButtonCallback()
-                {
+                .onNegative(new MaterialDialog.SingleButtonCallback() {
                     @Override
-                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which)
-                    {
+                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                         dialog.dismiss();
                     }
                 })
                 .show();
-     }
-    */
-
+    }
     public Typeface getCustomFont()
     {
         return Typeface.createFromAsset(activity.getAssets(), "LobsterTwo-BoldItalic.ttf");
@@ -84,6 +83,7 @@ public class CommonClass
     /**
      * Session management class
      * @param key
+
      */
     public boolean containKeyInSession(String key)
     {
@@ -155,10 +155,10 @@ public class CommonClass
      *
      * @return
      */
-   // public String get_user_id(){
-        //return getSession(ApiParams.COMMON_KEY);
-   // }
-   /*   public boolean is_user_login(){
+    public String get_user_id(){
+        return getSession(ApiParams.COMMON_KEY);
+    }
+    public boolean is_user_login(){
         String key = getSession(ApiParams.COMMON_KEY);
         if (key==null || key.equalsIgnoreCase("")){
             return  false;
@@ -166,14 +166,14 @@ public class CommonClass
             return  true;
         }
 
-    }*/
+    }
 
-   //  public String get_chat_with(){
-   //        return getSession(ApiParams.COMMON_KEY);
-   //    }
+    public String get_chat_with(){
+        return getSession(ApiParams.COMMON_KEY);
+    }
 
 
-    /*  public String get_user_data(String key){
+    /*public String get_user_data(String key){
         if (is_user_login()){
             try {
                 JSONObject jsonObject = new JSONObject(getSession(ApiParams.USER_DATA));
@@ -196,22 +196,29 @@ public class CommonClass
      * @return
      */
 
-    public boolean is_internet_connected()
-    {
-        ConnectivityManager cm = (ConnectivityManager)activity.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+    public boolean is_internet_connected(){
+        ConnectivityManager cm =
+                (ConnectivityManager)activity.getSystemService(Context.CONNECTIVITY_SERVICE);
+
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
-        return  activeNetwork != null && activeNetwork.isConnectedOrConnecting();
+        return  activeNetwork != null &&
+                activeNetwork.isConnectedOrConnecting();
     }
-    public  void open_screen(int position)
-    {
+    public  void open_screen(int position){
         Intent intent = null;
-        switch (position) { }
-        if (intent!=null){ activity.startActivity(intent); }
+        switch (position)
+        {
+
+        }
+        if (intent!=null){
+            activity.startActivity(intent);
+        }
     }
-    /* public void progressDialogOpen(){
+    public void progressDialogOpen(){
         dialog = ProgressDialog.show(activity, "",
                 activity.getString(R.string.process_with_Data), true);
-    }*/
+    }
     public void closeDialog(){
         dialog.dismiss();
     }
@@ -220,23 +227,21 @@ public class CommonClass
         Toast.makeText(activity,message, Toast.LENGTH_LONG).show();
     }
 
-    public void menuNavigation(Activity act, MenuItem item)
-    {
+    public void menuNavigation(Activity act, MenuItem item){
         Intent intent = null;
         switch (item.getItemId()){
             case android.R.id.home:
                 act.finish();
                 break;
+
         }
         if (intent!=null){
             act.startActivity(intent);
         }
     }
-    public  void setListViewHeightBasedOnChildren(ListView listView)
-    {
+    public  void setListViewHeightBasedOnChildren(ListView listView) {
         ListAdapter listAdapter = listView.getAdapter();
-        if (listAdapter == null)
-        {
+        if (listAdapter == null) {
             // pre-condition
             return;
         }
@@ -255,12 +260,12 @@ public class CommonClass
         listView.requestLayout();
     }
 
+
     /**
      * JSON to RESPONCE AND RESPONCE TO JSON
      * @return
      */
-    public ArrayList<HashMap<String,String>> getArrayListFromJsonArray(JSONArray jsonArray)
-    {
+    public ArrayList<HashMap<String,String>> getArrayListFromJsonArray(JSONArray jsonArray){
         ArrayList<HashMap<String,String>> postItems = new ArrayList<>();
         for(int i = 0 ; i < jsonArray.length(); i++){
             try {
@@ -271,8 +276,7 @@ public class CommonClass
         }
         return postItems;
     }
-    public HashMap<String,String> getMapJsonObject(JSONObject jsonObject)
-    {
+    public HashMap<String,String> getMapJsonObject(JSONObject jsonObject){
         HashMap<String,String> map = new HashMap<String, String>();
         Iterator<String> iter = jsonObject.keys();
         while (iter.hasNext()) {
@@ -286,8 +290,8 @@ public class CommonClass
         }
         return map;
     }
-    public JSONObject getJsonMapObject(HashMap<String,String> hashMap)
-    {
+    public JSONObject getJsonMapObject(HashMap<String,String> hashMap){
+
         JSONObject jobj = new JSONObject();
         for (Object key : hashMap.keySet()) {
             try {
@@ -303,11 +307,10 @@ public class CommonClass
      * END
      * @return
      */
-    /*public String getCurrencyAmount(String amount){
+    public String getCurrencyAmount(String amount){
         return ConstValue.CURRENCY+" "+amount;
-    }*/
-    public String printDifference2(String parsedate)
-    {
+    }
+    public String printDifference2(String parsedate){
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH);
         Date startDate = new Date();
         Date endDate = null;

@@ -12,11 +12,12 @@ import android.os.Bundle;
 
 import com.ziffytech.ziffydoctor.R;
 import com.ziffytech.ziffydoctor.activities.OPD.OPD.Fragments.Homefragment;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PatientlistTab extends AppCompatActivity
+public class PatientlistTab extends CommonActivity
 {
     private Toolbar toolbar;
     private TabLayout tabLayout;

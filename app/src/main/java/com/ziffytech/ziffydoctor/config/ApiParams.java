@@ -1,17 +1,33 @@
 package com.ziffytech.ziffydoctor.config;
 
+/*
+ * Created by  on 10/18/16.
+ * All end points for api is given here....
+ *
+ * Please find api code in  application/controllers/api.php  file here.. all function releated end points is given..
+ * /index.php/api/login   mean  public function login() is for login.
+ */
+
+// 9527239199
 
 public class ApiParams
 {
+
+    // https://www.ziffytech.com/ZiffyDummy/admin//index.php/Api/my_appointments
+//https://www.ziffytech.com/ZiffyDummy/admin/index.php/Api/login
+
     public static String PARM_RESPONCE = "responce";
     public static String PARM_DATA = "data";
     public static String PARM_ERROR = "error";
     public static String API_CONTROLLER = "ziffyboy";
+
     public  static String PREF_NAME = "hairkut.pref";
     public static String PREF_CATEGORY = "pref_category";
     public static String COMMON_KEY = "user_id";
+    //public static String PRICE_CART = "price_cart";
     public static String PREF_ERROR = "error_stack";
     public static String USER_DATA = "user_data";
+
     public static String USER_SALUTATION = "salutation";
     public static String USER_FULLNAME = "user_fullname";
     public static String USER_LOCATION = "location";
@@ -66,4 +82,7 @@ public class ApiParams
     public static String Payment_URL = ConstValue.BASE_PHARMACY+API_CONTROLLER+"/payment";
     public static String UPLOAD_SIGNATURE = ConstValue.BASE_PHARMACY+API_CONTROLLER+"/submit_order";
 
+
+    /*https://www.ziffytech.com/admin/Api/get_emergency_number";*/
 }
+//https://www.ziffytech.com/ZiffyDummy/admin/Api/get_emergency_number

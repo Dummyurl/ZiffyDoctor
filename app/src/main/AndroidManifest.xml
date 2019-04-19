@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.ziffytech.ziffydoctor">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -20,27 +21,36 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- tools:replace="android:allowBackup,android:appComponentFactory"> -->
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity android:name=".activities.MyPatient.activities.Patientlist"></activity>
         <activity android:name=".activities.DrawerMenu.activities.Referus" />
         <activity android:name=".activities.DrawerMenu.activities.Change_Schedule" />
         <activity android:name=".activities.DrawerMenu.activities.Doctor_schedule" />
-        <activity
-            android:name=".activities.OPD.OPD.Activities.PatientlistTab"
-            android:label="@string/title_activity_patientlist_tab"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.OPD.OPD.Activities.PatientlistTab" android:label="@string/title_activity_patientlist_tab" android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.DrawerMenu.activities.DoctorInfoActivity" />
         <activity android:name=".activities.OPD.OPD.Activities.PaymentActivity" />
         <activity android:name=".activities.OPD.OPD.Activities.ReviewActivity" />
-        <activity
-            android:name=".activities.OPD.OPD.Activities.MedicinePrescribeActivity"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".activities.OPD.OPD.Activities.TestPrescribeActivity"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".activities.OPD.OPD.Activities.VitalSignsActivity"
-            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activities.OPD.OPD.Activities.MedicinePrescribeActivity" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activities.OPD.OPD.Activities.TestPrescribeActivity" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activities.OPD.OPD.Activities.VitalSignsActivity" android:windowSoftInputMode="stateHidden" />
         <activity android:name=".activities.Dashboard.activities.DashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,6 +60,7 @@
         </activity>
         <activity android:name=".activities.DrawerMenu.activities.AccountsActivity" />
         <activity android:name=".activities.DrawerMenu.activities.ClinicsActivity" />
+
     </application>
 
 </manifest>

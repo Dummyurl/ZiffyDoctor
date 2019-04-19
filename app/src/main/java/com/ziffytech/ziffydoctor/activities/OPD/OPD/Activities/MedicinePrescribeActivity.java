@@ -12,8 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ziffytech.ziffydoctor.R;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
 
-public class MedicinePrescribeActivity extends AppCompatActivity
+public class MedicinePrescribeActivity extends CommonActivity
 {
 
     TextView text_med_type;

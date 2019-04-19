@@ -5,8 +5,9 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 
 import com.ziffytech.ziffydoctor.R;
+import com.ziffytech.ziffydoctor.commanclass.CommonActivity;
 
-public class ClinicsActivity extends AppCompatActivity
+public class ClinicsActivity extends CommonActivity
 {
     RecyclerView recycler_view_clinics;
     @Override
