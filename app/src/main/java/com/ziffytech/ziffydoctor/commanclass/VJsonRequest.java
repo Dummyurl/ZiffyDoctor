@@ -19,15 +19,14 @@ import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.ziffytech.ziffydoctor.R;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import activities.ziffytech.code.R;
-import activities.ziffytech.code.config.ApiParams;
 
 
 public class VJsonRequest
@@ -37,6 +36,9 @@ public class VJsonRequest
     String url;
     Map<String, String> params;
     JSONObject parmsJson;
+    public static String PARM_RESPONCE = "responce";
+    public static String PARM_DATA = "data";
+    public static String PARM_ERROR = "error";
     //int method;
 
     public VJsonRequest(Activity activity, String url, VJsonResponce  vresponce){
@@ -77,11 +79,11 @@ public class VJsonRequest
 
                             Log.e("API_RESPONSE",response.toString());
 
-                           // if (response.getString(config.PARM_RESPONCE)){
+                           // if (response.getString(ApiParams.PARM_RESPONCE)){
 
                                 vresponce.VResponce(response.toString());
                           //  }else{
-                             //   vresponce.VError(response.getString(config.PARM_ERROR));
+                             //   vresponce.VError(response.getString(ApiParams.PARM_ERROR));
                          //   }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -118,10 +120,10 @@ public class VJsonRequest
                     public void onResponse(JSONObject response) {
 
                         try {
-                            if (response.getBoolean(ApiParams.PARM_RESPONCE)){
-                                vresponce.VResponce(response.getString(ApiParams.PARM_DATA));
+                            if (response.getBoolean(PARM_RESPONCE)){
+                                vresponce.VResponce(response.getString(PARM_DATA));
                             }else{
-                                vresponce.VError(response.getString(ApiParams.PARM_ERROR));
+                                vresponce.VError(response.getString(PARM_ERROR));
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

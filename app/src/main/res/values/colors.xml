@@ -11,7 +11,8 @@
     <color name="colorPrimary1">#1BA7B9</color>
     <color name="colorPrimaryDark">#006b78</color>
     <color name="colorAccent">#07a7b9</color>
-    <color name="colorAccent_faint_30">#4D07A7B9</color>
+    <color name="colorAccent_faint_30">#5016B2C7</color>
+    <color name="drawercolor">#22af77</color>
 
     <color name="statusbar">#006b78</color>
     <color name="toolbarcolor">#077d8b</color>

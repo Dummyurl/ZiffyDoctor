@@ -26,11 +26,11 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:orientation="vertical">
+
              <ImageView
                  android:id="@+id/image_menu"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:outlineSpotShadowColor="@color/light_grey"
                  android:padding="@dimen/dimen_10"
                  android:layout_gravity="center"
                  app:srcCompat="@drawable/ic_test_02" />

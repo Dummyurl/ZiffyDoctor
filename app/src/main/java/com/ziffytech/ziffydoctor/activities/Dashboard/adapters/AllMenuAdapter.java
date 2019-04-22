@@ -12,7 +12,9 @@ import android.widget.TextView;
 import com.ziffytech.ziffydoctor.R;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.AccountsActivity;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.ClinicsActivity;
-import com.ziffytech.ziffydoctor.activities.OPD.OPD.Activities.PatientlistTab;
+import com.ziffytech.ziffydoctor.activities.MyPatient.activities.PatientDetails;
+import com.ziffytech.ziffydoctor.activities.OPD.OPD.Activities.VitalSignsActivity;
+import com.ziffytech.ziffydoctor.activities.TestBasket.activities.TestbasketTabPatientlist;
 
 import java.util.ArrayList;
 
@@ -52,15 +54,38 @@ public class AllMenuAdapter extends RecyclerView.Adapter<AllMenuAdapter.ProductH
                 public void onClick(View v)
                 {
                     //holder.card_menu.set(Color.parseColor("#077d8b"));
-                    //activity.startActivity(new Intent(activity, VitalSignsActivity.class));
-                    activity.startActivity(new Intent(activity, PatientlistTab.class));
+                    activity.startActivity(new Intent(activity, VitalSignsActivity.class));
+                    //activity.startActivity(new Intent(activity, PatientlistTab.class));
                 }
             });
 
-        }else if (position==1){
+        }else if (position==1)
+        {
             holder.text_menu_title.setText("Test Basket");
-        }else if(position==2){
+            holder.card_menu.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    //holder.card_menu.set(Color.parseColor("#077d8b"));
+                    activity.startActivity(new Intent(activity, TestbasketTabPatientlist.class));
+                    //activity.startActivity(new Intent(activity, PatientlistTab.class));
+                }
+            });
+
+        }else if(position==2)
+        {
             holder.text_menu_title.setText("My Patients");
+            holder.card_menu.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    //holder.card_menu.set(Color.parseColor("#077d8b"));
+                    activity.startActivity(new Intent(activity, PatientDetails.class));
+                    //activity.startActivity(new Intent(activity, PatientlistTab.class));
+                }
+            });
         }else if(position==3){
             holder.text_menu_title.setText("Consult");
         }else if(position==4){

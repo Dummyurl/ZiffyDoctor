@@ -20,9 +20,11 @@ import com.ziffytech.ziffydoctor.R;
 import com.ziffytech.ziffydoctor.activities.Dashboard.adapters.AdapterDrawer;
 import com.ziffytech.ziffydoctor.activities.Dashboard.adapters.AllMenuAdapter;
 import com.ziffytech.ziffydoctor.activities.Dashboard.models.AllMenuModel;
+import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.AccountsActivity;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.ClinicsActivity;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.DoctorInfoActivity;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.Doctor_schedule;
+import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.Notification;
 import com.ziffytech.ziffydoctor.activities.DrawerMenu.activities.Referus;
 
 import java.util.ArrayList;
@@ -68,6 +70,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     private void setUpViews()
     {
 
+        getSupportActionBar().hide();
         drawer_layout = (DrawerLayout) findViewById(R.id.drawer_layout);
         adapterDrawer = new AdapterDrawer(DashboardActivity.this, getResources().getStringArray(R.array.menus));
         listView_left_drawer = (ListView) findViewById(R.id.left_drawer);
@@ -125,12 +128,16 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         }
         if(i==5)
         {
+            Intent profile = new Intent(DashboardActivity.this, AccountsActivity.class);
+            startActivity(profile);
         }
         if(i==6)
         {
         }
         if(i==7)
         {
+            Intent profile = new Intent(DashboardActivity.this, Notification.class);
+            startActivity(profile);
         }
         if(i==8)
         {

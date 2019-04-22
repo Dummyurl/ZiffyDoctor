@@ -41,6 +41,8 @@ public class AccountsActivity extends CommonActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accounts);
+        allowBack();
+        setHeaderTitle("Accounts");
         setupViews();
         img_from_date.setOnClickListener(new View.OnClickListener()
         {
